@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Playground architecture
+- Keep the encyclopedia as one index route with typed, local category state; this preserves its self-contained single-page workflow.
+- Keep static catalog metadata and filtering separate from interactive demos; pure data can be tested independently of rendering.
+- Keep demonstration state local and use no backend or persistence; the app is a portable learning reference.
+- Define visual roles in global OKLCH tokens and reuse Radix/shadcn primitives; theme and accessible interactions remain consistent.
